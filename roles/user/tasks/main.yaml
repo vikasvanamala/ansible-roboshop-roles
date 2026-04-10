@@ -11,6 +11,6 @@
 
 - name: system setup
   ansible.builtin.include_role:
-    name: common
-    tasks_from: system-setup.yaml
+    name: common-tasks
+    task_from: system-setup.yaml
 
