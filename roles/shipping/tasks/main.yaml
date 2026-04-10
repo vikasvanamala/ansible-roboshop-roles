@@ -24,10 +24,10 @@
     login_user: "{{ MYSQL_ROOT_USER }}"
     login_password: "{{ MYSQL_ROOT_PASSWORD }}"
     target: "{{ item }}"
-    loop:
-    - /app/db/schema.sql
-    - /app/db/app-user.sql 
-    - /app/db/master-data.sql  
+  loop:
+  - /app/db/schema.sql
+  - /app/db/app-user.sql 
+  - /app/db/master-data.sql  
  
 
 - name: system-setup
